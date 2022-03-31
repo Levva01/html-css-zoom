@@ -127,7 +127,64 @@ main{
     opacity: 0;
 }
 
+/* effeto hover */
 .cam:hover .unmute-container, .cam:hover .options-container{
     opacity: 100%;
     cursor: pointer;
+}
+
+/*------------
+    FOOTER
+------------*/
+
+footer{
+    width: 100%;
+    height: 6.3vh;
+    display: flex;
+    justify-content: space-between;
+    color: lightgray;
+    background-color: #1b1b1b;
+}
+
+.left-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.left-footer > div{
+    margin-left: 15px;
+}
+
+.security{
+    margin-left: 0;
+}
+
+.center-footer{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    padding-top: 5px;
+}
+
+.center-footer > div{
+    margin-left: 25px;
+}
+
+.right-footer{
+    padding: 10px;
+}
+
+.right-footer button{
+    background-color: red;
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    border: none;
+}
+
+.share-screen{
+    color: green;
 }
