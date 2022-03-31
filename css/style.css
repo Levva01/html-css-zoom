@@ -12,3 +12,27 @@
     HEADER 
 -------------*/
 
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-left{
+    display: flex;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.shield-check, .recording, .header-right{
+    background-color: black;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+.recording{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+}
+
