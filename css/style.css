@@ -79,4 +79,55 @@ main{
     border-radius: 10px;
     background-image: url(https://picsum.photos/id/237/400/200);
     background-size: cover;
+    position: relative;
+}
+
+.name-container{
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 4px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 3px;
+    left: 3px;
+}
+
+.name-container i{
+    color: red;
+    font-size: small;
+}
+
+.name-container span{
+    color: white;
+    font-size: small;
+}
+
+
+.unmute-container{
+    color: white;
+    position: absolute;
+    font-size: small;
+    background-color: #3370e5;
+    border-radius: 5px;
+    padding: 5px;
+    top: 4px;
+    right: 29px;
+    opacity: 0%;
+}
+
+.options-container{
+    padding: 5px;
+    color: white;
+    position: absolute;
+    font-size: small;
+    background-color: #3370e5;
+    border-radius: 5px;
+    right: 4px;
+    top: 4px;
+    opacity: 0%;
+    opacity: 0;
+}
+
+.cam:hover .unmute-container, .cam:hover .options-container{
+    opacity: 100%;
+    cursor: pointer;
 }
