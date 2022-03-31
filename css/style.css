@@ -8,11 +8,16 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /*-------------
     HEADER 
 -------------*/
 
 header{
+    background-color: rgb(17, 17, 17);
     display: flex;
     justify-content: space-between;
 }
@@ -26,13 +31,52 @@ header{
 .shield-check, .recording, .header-right{
     background-color: black;
     color: white;
-    padding: 3px;
+    padding: 4px 3px;
     border-radius: 5px;
+}
+
+.shield-check{
+    color: green;
 }
 
 .recording{
     display: flex;
     justify-content: space-evenly;
-    width: 80%;
+    width: 85%;
 }
 
+.header-right{
+    width: 80px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*----------
+    MAIN 
+----------*/
+
+main{
+    background-color: rgb(17, 17, 17);
+    width: 100%;
+    height: 90vh;
+    display: flex;
+}
+
+.cam-container{
+    margin: auto;
+    background-color: inherit;
+    width: 90%;
+    height: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+}
+
+.cam{
+    width: calc(100% / 6 - 3px);
+    height: calc(100% / 6 - 3px);
+    border-radius: 10px;
+    background-image: url(https://picsum.photos/id/237/400/200);
+    background-size: cover;
+}
